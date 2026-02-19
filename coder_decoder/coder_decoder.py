@@ -4,13 +4,6 @@ from scipy.io import wavfile
 import sys
 import os
 
-# Ensure we can use plots (fallback to Agg if no display found, but try TkAgg if specified)
-try:
-    import matplotlib
-    # matplotlib.use('TkAgg') # Uncomment if running locally with Tkinter support
-except:
-    pass
-
 class SignalCoderDecoder:
     def __init__(self, levels):
         self.levels = levels
